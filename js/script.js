@@ -1,25 +1,17 @@
 'use strict';
 
 let num = +prompt('Введите число.');
-let i = 2
 
-for ( ; ; i++ ){
+for (let i = 2; i <= num; i++) {
 
-  if(num < 1){
-    console.log(NaN);
+  if (num % i === 0) {
+
+    alert(`наименьший делитель: ${i}`);
     break;
   }
+}
 
-if (num % i === 0 ){
-
-  alert(`наименьший делитель: ${i}`);
-  break;
-
-} else if ( num % i !== 0 ){
-
-    alert(`число ${num} - простое`);
-    break;
-
-  }
+if (num < 1) {
+  console.log(NaN);
 }
 
